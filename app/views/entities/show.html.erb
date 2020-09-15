@@ -1,0 +1,35 @@
+<% author = @entity['author_struct'].find { |author| author['uri'] == params[:id] } %>
+
+<div class="entities" data-behavior="wikidata" data-wikidata-id="<%= author['uri'].sub('https://www.wikidata.org/wiki/', '') %>">
+  <div class="d-flex justify-content-between">
+    <h1><%= author['label'] %></h1>
+    <div data-behavior="wikidata-thumb"></div>
+  </div>
+
+  <div class="d-flex justify-content-between documents-list mt-3">
+    <div
+      class="card mr-3"
+      style="display:none"
+      data-behavior="entity-documents"
+      data-lookup-uri="<%= search_catalog_path(f: { author_uri_ssim: [author['uri']] }) %>"
+    >
+      <div class="card-header">
+        Documents by this entity
+      </div>
+      <div class="card-body body">
+      </div>
+    </div>
+    <div
+      class="card ml-3"
+      style="display:none"
+      data-behavior="entity-documents"
+      data-lookup-uri="<%= search_catalog_path(f: { subject_uri_ssim: [author['uri']] }) %>"
+      >
+      <div class="card-header">
+        Documents about this entity
+      </div>
+      <div class="card-body body">
+      </div>
+    </div>
+  </div>
+</div>

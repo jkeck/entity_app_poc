@@ -9,4 +9,5 @@
 //= require twitter/typeahead
 //= require bootstrap
 //= require blacklight/blacklight
-
+//= require getWikidataThumb
+//= require entityDocumentLookups

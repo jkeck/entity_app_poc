@@ -43,6 +43,7 @@ class CatalogController < ApplicationController
     config.add_show_tools_partial(:email, callback: :email_action, validator: :validate_email_params)
     config.add_show_tools_partial(:sms, if: :render_sms_action?, callback: :sms_action, validator: :validate_sms_params)
     config.add_show_tools_partial(:citation)
+    config.add_show_tools_partial(:entity_page_tool, partial: 'entity_page_tool', if: :render_entity_page_tool)
 
     config.add_nav_action(:bookmark, partial: 'blacklight/nav/bookmark', if: :render_bookmarks_control?)
     config.add_nav_action(:search_history, partial: 'blacklight/nav/search_history')
@@ -200,5 +201,11 @@ class CatalogController < ApplicationController
     # if the name of the solr.SuggestComponent provided in your solrcongig.xml is not the
     # default 'mySuggester', uncomment and provide it below
     # config.autocomplete_suggester = 'mySuggester'
+  end
+
+  private
+
+  def render_entity_page_tool
+    @document['author_struct'].present?
   end
 end

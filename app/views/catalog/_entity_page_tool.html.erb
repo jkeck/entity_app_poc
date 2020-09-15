@@ -1,0 +1,5 @@
+<% author = document['author_struct'].first.is_a?(String) ? JSON.parse(document['author_struct'].first) : document['author_struct'].first %>
+
+<span class="nav-link">
+  Entity: <%= link_to(author['label'], entity_path(author['uri'])) %>
+</span>
