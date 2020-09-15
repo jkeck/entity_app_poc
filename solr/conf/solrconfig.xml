@@ -77,6 +77,8 @@
 
        <str name="fl">
          *,
+         author_struct:[json],
+         subject_struct:[json],
          score
        </str>
 

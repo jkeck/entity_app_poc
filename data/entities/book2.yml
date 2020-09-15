@@ -1,0 +1,9 @@
+id: 2
+title_tsim: Mark Twain's Geographical Imagination
+author_tsim:
+  - Alvarez, Joseph A.
+subject_struct:
+  uri: https://www.wikidata.org/wiki/Q7245
+  label: Twain, Mark, 1835-1910
+subject_uri_ssim:
+  - https://www.wikidata.org/wiki/Q7245

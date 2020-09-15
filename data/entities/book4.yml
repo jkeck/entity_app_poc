@@ -1,0 +1,9 @@
+id: 4
+title_tsim: Tom Sawyer ; and, Huckleberry Finn
+author_tsim:
+  - Twain, Mark, 1835-1910
+author_struct:
+  uri: https://www.wikidata.org/wiki/Q7245
+  label: Twain, Mark, 1835-1910
+author_uri_ssim:
+  - https://www.wikidata.org/wiki/Q7245

@@ -1,0 +1,9 @@
+id: 3
+title_tsim: Critics on Mark Twain
+author_tsim:
+  - Kesterson, David B., 1938-
+subject_struct:
+  uri: https://www.wikidata.org/wiki/Q7245
+  label: Twain, Mark, 1835-1910
+subject_uri_ssim:
+  - https://www.wikidata.org/wiki/Q7245
